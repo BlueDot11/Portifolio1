@@ -1,0 +1,248 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 20px;
+    font-family:"montserrat",sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.hero.container{
+	min-height: 300vh;
+	content: normal;
+    display: flex;
+    align-items: center;
+    justify-content: left;}
+.hero{
+	background-image: url(donah2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    z-index: -1;
+}
+.hero.hero{
+	max-width: 1500px;
+	margin: auto;
+	padding: 0 100px;
+	justify-content: flex-start;
+}
+.hero::after{
+	content: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    background-color: rgb(195, 228, 10);
+    opacity: .3;
+    z-index: 1;
+}
+.hero h1{
+	display: block;
+	width: fit-content;
+	font-size: 2em;
+	position: relative;
+	color:red;
+	animation: text_reveal 1s ease;
+	animation-delay: 1.5s;
+}
+.services.service-bottom{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.services.service-item{
+	flex-basis: 80px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction:column;
+	padding: 30px;
+	box-sizing: 10px;
+	background-image: url(/donah.jpg);
+	background-size: cover;
+	margin: 10px 5px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.service.service-item::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100px;
+	width: 100px;
+	background-image: linear-gradient;
+	opacity: .7;
+	z-index: -1;
+
+}
+.hero h1:nth-child(1){
+	animation-delay: 1s;
+}
+.hero h1:nth-child(2){
+	animation-delay: 2s;
+}
+.hero h1:nth-child(3){
+	animation: text_reveal_name .5s forwards;
+	animation-delay: 3s;
+}
+
+.hero.h1 span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0%;
+	background-color: crimson;
+	animation:text_reveal_box 1s ease;
+	animation-delay: 1s;
+}
+.hero:nth-child(1){
+	animation-delay: 0.5s;
+}
+.hero:nth-child(2){
+	animation-delay: 1.5s;
+}
+.hero:nth-child(3){
+	animation-delay: 2.5s;
+}
+.cta{
+	display:flex;
+	position: 30px 20px;
+	color: rgb(15, 36, 231);
+	background-color: transparent;
+	border: 1px solid rgb(226, 223, 9);
+	font-size: 3em;
+	text-transform: lowercase;
+	letter-spacing: .1em;
+	margin-top: 30px;
+	transition: .2s ease;
+	transition-property: background-color,rgb(33, 33, 112);
+	
+
+}
+.cta:hover {
+	background-color: yellow;
+	
+	
+	
+
+}
+.services{
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0;
+	padding: 25px 0;
+}
+.project.project-img img{
+	transition: 3s ease transform;
+	
+}
+.project.project-item:hover.project-img img{
+	transform: scale(1,1);
+}
+.about.about{
+	flex-direction: column;
+	
+}
+.contact.contact{
+	flex-direction: column;
+	width: 1200;
+	margin: 0 auto;
+}
+.contact.contact-item{
+	width: 400px;
+}
+.contact.contact-item{
+	width: 80px;
+	padding: 20px;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px yellow;
+
+
+}
+.contact.incon{
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.contact.contact.contact-info h1{
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;	
+}
+.footer{
+	background-image: linear-gradient(60dog,grey, 100px);
+}
+.footer.footer h1{
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.footer h2{
+	color: white;
+	font-weight: 500;
+	font-size: 1.5rem;
+	letter-spacing: 1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footer.social-icone{
+	display: flex;
+	margin-bottom: 30px;
+}
+.footer.social-item{
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+.footer.p{
+	color: white;
+	font-size: 1.3rem;
+}
+@keyframes text_reveal_box{
+	50%
+	   { 
+		   width: 100px;
+		   left: 0px;
+	   }	
+		100%
+		{
+		width: 0%;
+		left: 100px;
+}
+}
+
+
+@keyframes text_reveal_box{
+ 		100%{
+ 			color: white ;
+}
+}
+
+@keyframes text_reveal_name{
+ 		50%{ 
+ 			color: white;
+
+}}
+@media only screen and(min-width:760px){
+	.cta{
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	
+}
