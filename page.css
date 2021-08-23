@@ -5,29 +5,35 @@
 	box-sizing: border-box;
 }
 html{
-	font-size: 18px;
+	font-size: 30px;
     font-family:"montserrat",sans-serif;
 }
 
-a{
+div a{
 	text-decoration: none;
-	width: 250px;
-	height: 70px;
+	width: 455px;
+	height: 110px;
+	
+	
 }
-.hero.container{
-	min-height: 300vh;
+div a:hover{
+	color: red;
+}
+#hero.container{
+	min-height: 230vh;
 	content: normal;
     display: flex;
     align-items: center;
-    justify-content: left;}
-.hero{
+    justify-content:left;}
+div.hero{
 	background-image: url(donah2.jpg);
     background-size: cover;
     background-position-x: center;
     position: relative;
     z-index: -1;
+	
 }
-.hero.hero{
+#hero.hero{
 	max-width: 1500px;
 	margin: auto;
 	padding: 0 100px;
@@ -120,7 +126,7 @@ a{
 	position: 30px 20px;
 	color: rgb(15, 36, 231);
 	background-color: transparent;
-	border: 1px solid rgb(226, 223, 9);
+	border: 1px solid rgb(243, 12, 147);
 	font-size: 3em;
 	text-transform: lowercase;
 	letter-spacing: .1em;
@@ -128,11 +134,7 @@ a{
 	transition: .2s ease;
 	transition-property: background-color,rgb(33, 33, 112);
 }
-.cta{
-	color: red;
-	cursor: crosshair;
-}
-.services{
+div.services{
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
